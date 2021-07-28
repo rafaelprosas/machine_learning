@@ -1,0 +1,20 @@
+1. Tanto o aprendizado supervisionado quanto o aprendizado não supervisionado necessitam de pelo menos:
+
+Resposta:
+(a) Um atributo de entrada
+
+
+2. Suponha que iremos realizar uma validação cruzada (CV - Cross-validation) com 5 partições (5-CV). Se a base de dados possui 100 exemplos, o Número de execuções (Ne), o tamanho da base de treinamento (Nt) e o tamanho da base de teste (Nv) serão, respectivamente:
+
+Resposta:
+(e) Ne =5, Nt =80, Nv =20.
+
+
+
+4. Descreva porque é importante que sejam utilizados classi􏰀cadores fracos nos métodos de combinação de modelos ()Ensamble), tais como a Random Forrest e o Adaboost.
+
+Experimentalmente tem sido mostrado que modelos combinados apresentam melhores desempenhos do que um sistema decisório único. Com modelos combinados nós conseguimos neutralizar ou pelo menos minimizar drasticamente a instabilidade inerente dos algoritmos de aprendizagem. Sistemas combinados reduzem a variância e quando maior for o número de classificadores combinados, maior a redução da variância. 
+Apesar de normalmente os sistemas combinados apresentarem melhores resultados, não há garantias que isso ocorrerá sempre. Ainda é uma área de pesquisa com muitos pontos para serem confirmados teoricamente. Um dos lados negativos dos modelos combinados é que eles são mais custosos para serem construídos, já que a maioria dos sistemas combinados fazem uso de bootstrap ou de Cross validation e costumam envolver	mais de uma fase ou iterações.
+Uma das técnicas de combinação de modelos é a prática de comitês (Ensemble), ela tem se mostrado muito eficiente em problemas onde um único especialista não funciona bem, bons resultados são encontrado em várias aplicações em uma larga variedade de cenários.
+Na técnica que comitês é bastante comum a utilização de "Classificadores Fracos", pois a combinação das saídas produzidas pelos classificadores reduz o risco de escolha por um classificador com um pobre desempenho e não correr o risco de seguir apenas a "recomendação" de um único especialista.
+Porém temos algumas ressalvas na utilização de Classificadores Fracos, mesmo classificadores com desempenhos de generalização similares podem trabalhar diferentemente, um conjunto de classificadores com desempenhos similares no conjunto de classificação podem ter diferentes desempenhos de generalização.
